@@ -219,3 +219,4 @@ int main()
     list.display();                   // 60 40 10 90 40 50
     cout << list.getAtidx(4) << endl; // 40
 }
+
