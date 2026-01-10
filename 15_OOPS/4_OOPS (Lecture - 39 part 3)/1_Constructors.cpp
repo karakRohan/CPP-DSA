@@ -1,21 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Bike {
+class Bike
+{
 public:
     int tyreSize;
     int engineSize;
 
     // Constructor
-    Bike(int tyreSize, int engineSize) {
+    Bike(int tyreSize, int engineSize)
+    {
         this->tyreSize = tyreSize;
         this->engineSize = engineSize;
         cout << "Constructor Call Hua!!\n";
     }
 };
 
-int main() {
-    Bike tvs(12, 100);          // Pass arguments directly
+int main()
+{
+    Bike tvs(12, 100); // Pass arguments directly
     Bike honda(13, 150);
     Bike royalEnfield(15, 350);
 
