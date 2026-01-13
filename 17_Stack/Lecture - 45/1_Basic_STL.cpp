@@ -28,5 +28,18 @@ int main()
 
 
     // Real Method :- 1
+    // We will use extra stack
+    stack<int> temp;
+    while (stack1.size()>0)
+    {
+        cout << stack1.top() << " ";
+        int x = stack1.top();
+        stack1.pop();
+        temp.push(x);
+    }
+
+    // Putting elements back from temp to stack
+    
+
 }
 
