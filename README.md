@@ -77,33 +77,6 @@ OOP Principles
 
 Complexity Analysis
 
-# 📂 Repository Structure
-DSA-Cpp/
-│── 2_Fundamentals_of_Programming/
-│── 3_Loops_and_Pattern_Printing/
-│── 4_Functions_and_Pointers/
-│── 5_Array/
-│── 6_2D_Array/
-│── 7_String/
-│── 8_Time_and_Space_Analysis/
-│── 9_Sorting/
-│── 10_Searching/
-│── 11_Recursion/
-│── 12_Advance_Sorting/
-│── 13_Special_Algorithms/
-│── 14_Object_Oriented_Programming/
-│── 15_Linked_List/
-│── 16_Stacks/
-│── 17_Queues/
-│── 18_Binary_Trees/
-│── 19_Binary_Search_Trees/
-│── 20_Maps_and_Sets/
-│── 21_Heaps/
-│── 22_Greedy/
-│── 23_Dynamic_Programming/
-│── 24_Graphs/
-│── 25_Backtracking/
-│── 26_Segment_Trees/
 
 # 💡 What Recruiters Can Expect
 
