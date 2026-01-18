@@ -17,7 +17,6 @@ int main() {
         temp.push(s.top());
         s.pop();
     }
- 
     
     // Print bottom to top
     cout << "Stack elements from bottom to top: ";
