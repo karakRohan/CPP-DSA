@@ -24,6 +24,7 @@ int main() {
         cout << temp.top() << " ";
         temp.pop();
     }
+    
 
       
     return 0;
