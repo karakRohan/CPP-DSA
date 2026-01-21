@@ -42,6 +42,7 @@ int main(){
     pushAtBottom(stack1, -10);
     cout << endl;
     display(stack1);
+    
 
     return 0;
 }
