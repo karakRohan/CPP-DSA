@@ -26,8 +26,15 @@ void pushAtBottom(stack<int>& stack1, int val){
     int x = stack1.top();
     stack1.pop();
     pushAtBottom(stack1, val);
-    cout<<x<<" ";
+    // cout<<x<<" ";
     stack1.push(x);
+}
+void reverse(stack<int>& stack1){
+    if(stack1.size()==1) return;
+    int x = stack1.top();
+    stack1.pop();
+    reverse(stack1);
+    pushAtBottom(stack1, x);
 }
 
 int main(){
@@ -38,9 +45,10 @@ int main(){
     stack1.push(40);
     stack1.push(50);
 
-    // display(stack1);
-    pushAtBottom(stack1, -10);
+    display(stack1);
+    // pushAtBottom(stack1, -10);
     cout << endl;
+    reverse(stack1);
     display(stack1);
  
     return 0;
