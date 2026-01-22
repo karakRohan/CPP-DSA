@@ -49,14 +49,19 @@ public:
         }
         return head->val;
     }
+    void print(Node* temp)
+    {
+        if (temp == NULL)
+        {
+            return;
+        }
+        print(temp->next);
+        cout << temp->val << " ";
+    }
     void display()
     {
         Node* temp = head;
-        while (temp != NULL)
-        {
-            cout << temp->val << " ";
-            temp = temp->next;
-        }
+        print(temp);
         cout << endl;
     }
 };
