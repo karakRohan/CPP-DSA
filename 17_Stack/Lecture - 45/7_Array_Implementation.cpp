@@ -9,6 +9,10 @@ public:
         idx = -1;
     } 
     void push(int val){
+        if(idx == 4){
+            cout<<"Stack is Full"<<endl;
+            return;
+        }
         idx++;
         arr[idx] = val;
     }
