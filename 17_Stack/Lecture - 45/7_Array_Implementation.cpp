@@ -34,7 +34,8 @@ int main(){
     stack1.push(40);
     stack1.push(50);
     stack1.push(60); // Stack is Full
-    cout<<stack1.size();
+    cout<<stack1.size()<<endl; // 5
+
     // cout<<stack1.top()<<endl;  // 40
     // cout<<stack1.size()<<endl; // 4
     // stack1.pop();  // 40
