@@ -19,6 +19,7 @@ string removeDuplicates(string s)
 }
 
 
+
 int main()
 {
     string s = "aaabcddaabffg";
