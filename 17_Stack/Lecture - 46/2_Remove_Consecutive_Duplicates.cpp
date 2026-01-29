@@ -7,8 +7,14 @@ string removeDuplicates(string s)
     st.push(s[0]);
     for(int i = 0; i < s.length(); i++)
     {
-          if(s[i]!=st.top()) st.push(s[i]);
+        if(s[i]!=st.top()) st.push(s[i]);
     }
+    s= "";
+    while(st.size()>0){
+        s += st.top();
+        st.pop();
+    }
+    return s;
 }
 
 int main()
