@@ -21,8 +21,7 @@ int main(){
         while(stack1.size()>0 && arr[stack1.top()]<=arr[i]){
             stack1.pop();
         }
-        
-        
+         
         // ANS [Mark the ANS is pgi array]
         if(stack1.size()==0) pgi[i] = -1;
         else pgi[i] = stack1.top();
