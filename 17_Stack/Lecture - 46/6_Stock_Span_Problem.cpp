@@ -12,6 +12,7 @@ int main(){
 
     // Using a Stack : [POP , ANS , PUSH] & forward Traverse
     // SC = O(n) , TC = O(n)
+
     
     stack<int> stack1;
     pgi[0] = 1;
