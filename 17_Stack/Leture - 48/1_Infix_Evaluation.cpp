@@ -3,7 +3,7 @@ using namespace std;
 
 int priority(char ch)
 {
-    if (ch == '*' || ch == '-')
+    if (ch == '+' || ch == '-')
         return 1;
     else
         return 2; // + , /
@@ -55,4 +55,18 @@ int main()
             }
         }
     }
+    // The Operators Stack Can have values.
+    // So make it empty
+    while (ops.size() > 0)
+    {
+        char ch = ops.top();
+        ops.pop();
+        int val2 = values.top();
+        values.pop();
+        int val1 = values.top();
+        values.pop();
+        int ans = solve(val1, val2, ch);
+        values.push(ans);
+    }
+    cout << "The Result of Infix Evaluation is : " << values.top() << endl;
 }
