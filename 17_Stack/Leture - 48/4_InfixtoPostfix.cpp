@@ -14,9 +14,9 @@ string solve(string val1, string val2, char ch)
     // We Have to store prefix in the ans
     // prefix is -> operator + value1 + value2
     string s = ""; 
-    s.push_back(ch);
     s += val1;
     s += val2;
+    s.push_back(ch);
     return s;
 }
 
