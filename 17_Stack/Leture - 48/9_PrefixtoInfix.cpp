@@ -7,7 +7,7 @@ bool isOperator(char ch){
 
 int main()
 {
-    string s = "-/*+ABCD"; // Prefix Expression
+    string s = "-/*+79483"; // Prefix Expression
 
     stack<string> values;   // <-- only this change
 
