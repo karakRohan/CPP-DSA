@@ -10,6 +10,21 @@ void display(queue<int> q){
     }
     cout<<endl;
 }
+void reverse(queue<int> &q){
+    stack<int> st;
+    // Empty the queue into stack
+    while(q.size()>0){
+        int x = q.front();
+        q.pop();
+        st.push(x);
+    }
+    // Empty the stack into queue
+    while(st.size()>0){
+        int x = st.top();
+        st.pop();
+        q.push(x);
+    }
+}
 int main(){
     queue<int> q;
     // push , pop , front , back , size , empty
@@ -23,7 +38,10 @@ int main(){
     // cout<<"Size: "<<q.size()<<endl;
     // cout<<"Empty or not: "<<q.empty()<<endl;
     display(q);
-    q.pop();
+    reverse(q);
+    // q.pop();
+    display(q); 
+    reverse(q);
     display(q);  
     
 }
