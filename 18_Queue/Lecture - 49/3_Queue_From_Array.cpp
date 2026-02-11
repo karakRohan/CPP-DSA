@@ -6,11 +6,13 @@ class Queue
 public:
     int f;
     int b;
+    int s;
     vector<int> arr;
     Queue(int val)
     {
-        f = 0;
-        b = 0;
+        f = 0; // f = front
+        b = 0; // b = back
+        s = 0; // s = size
         vector<int> v(val);
         arr = v;
     }
@@ -23,19 +25,21 @@ public:
         }
         arr[b] = val;
         b++;
+        s++;
     }
     void pop()
     {
-        if (f - b == 0)
+        if (s == 0)
         {
             cout << "Queue is Empty!" << endl;
             return;
         }
         f++;
+        s--;   
     }
     int front()
     {
-        if (f - b == 0)
+        if (s == 0)
         {
             cout << "Queue is Empty!" << endl;
             return -1;
@@ -44,7 +48,7 @@ public:
     }
     int back()
     {
-        if (f - b == 0)
+        if (s == 0)
         {
             cout << "Queue is Empty!" << endl;
             return -1;
@@ -53,11 +57,11 @@ public:
     }
     int size()
     {
-        return b - f;
+        return s;
     }
     bool empty()
     {
-        if (f - b == 0)
+        if (s == 0)
             return true;
         else
             return false;
