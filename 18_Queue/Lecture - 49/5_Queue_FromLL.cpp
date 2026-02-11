@@ -34,8 +34,10 @@ public:
             cout<<"Queue is Empty!"<< endl;
             return;
         }
+        Node* temp = head;
         head = head->next;
         s--;
+        delete(temp); // Wastage nehi ho rahi
     }
     int front(){
         if(s==0){
