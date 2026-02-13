@@ -12,7 +12,7 @@ int main(){
         if(arr[i]<0) q.push(i);
     }
     int i = 0;
-    while(i+k<n){
+    while(i+k<=n){
         while(q.size()>0 && q.front()<i) q.pop();
         // if(q.front()>= i+k) ans.push_back(0);
         if(q.size() == 0 || q.front()>= i+k) ans.push_back(0);
