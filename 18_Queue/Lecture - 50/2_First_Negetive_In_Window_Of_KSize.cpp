@@ -19,6 +19,10 @@ int main(){
         else ans.push_back(arr[q.front()]);
         i++;
     }
+    for(int i=0; i<n; i++){
+        cout<<ans[i]<<" ";
+    }
+    cout<<endl;
     for(int i=0; i<ans.size(); i++){
         cout<<ans[i]<<" ";
     }
