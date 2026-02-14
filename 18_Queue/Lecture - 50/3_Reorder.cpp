@@ -13,20 +13,39 @@ void display(queue<int> q){
 }
 
 
-void reversek(int k, queue<int>& q){
+void reorder (queue<int>& q){
     stack<int> st;
-    for(int i=1;i<=k;i++){
+    int n = q.size();
+    // Pop the first half of the queue and push it onto the stack
+    for(int i=1;i<=n/2;i++){
+        st.push(q.front());
+        q.pop();
+    }
+    // Empty the stack back into the queue
+    while(st.size()>0){
+        q.push(st.top());
+        st.pop();
+    }
+    // Pop 2nd half (now the first) of the q to the st
+    for(int i=1;i<=n/2;i++){
+        st.push(q.front());
+        q.pop();
+    }
+    // Most Imortant Step: Interleave the elements of the stack and queue
+    while(st.size()>0){
+        q.push(st.top());
+        st.pop();
+        q.push(q.front());
+        q.pop();
+    }
+    // Reverse the queue to get the final order
+    while(q.size()>0){
         st.push(q.front());
         q.pop();
     }
     while(st.size()>0){
         q.push(st.top());
         st.pop();
-    }
-    int n = q.size();
-    for(int i=1;i<=n-k;i++){
-        q.push(q.front()); 
-        q.pop(); 
     }
 }
 
@@ -38,9 +57,9 @@ int main(){
     q.push(4);
     q.push(5);
     q.push(6);
-    
+    q.push(7);
+    q.push(8);
     display(q);
-    int k = 2;
-    reversek(k,q);
+    reorder(q);
     display(q);
 }
