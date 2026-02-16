@@ -30,7 +30,7 @@ int size(Node* root){
 }
 
 int maxInTree(Node* root){
-    if(root==NULL) return 0;
+    if(root==NULL) return INT_MIN; // Return the minimum integer value if the tree is empty
     int lmax = maxInTree(root->left);
     int rmax = maxInTree(root->right);
     return max(root->val, max(lmax, rmax));
