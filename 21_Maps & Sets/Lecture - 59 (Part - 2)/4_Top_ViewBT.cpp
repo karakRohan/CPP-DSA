@@ -102,5 +102,6 @@ int main() {
     for (int x : result)
         cout << x << " ";
 
+
     return 0;
 }
