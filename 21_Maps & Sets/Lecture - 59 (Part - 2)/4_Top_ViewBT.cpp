@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Tree Node Structure
 struct Node {
     int data;
     Node* left;
@@ -13,18 +12,45 @@ struct Node {
     }
 };
 
-// Function to return Top View
+// Level Order Print
+void printLevelOrder(Node* root) {
+
+    if (!root) return;
+
+    queue<Node*> q;
+    q.push(root);
+
+    while (!q.empty()) {
+
+        int size = q.size();
+
+        for (int i = 0; i < size; i++) {
+
+            Node* node = q.front();
+            q.pop();
+
+            cout << node->data << " ";
+
+            if (node->left)
+                q.push(node->left);
+
+            if (node->right)
+                q.push(node->right);
+        }
+
+        cout << endl;
+    }
+}
+
+// Top View Function
 vector<int> topView(Node* root) {
 
     vector<int> ans;
+    if (!root) return ans;
 
-    if (root == NULL)
-        return ans;
-
-    map<int, int> mp;   // Horizontal Distance -> Node value
+    map<int, int> mp;
     queue<pair<Node*, int>> q;
 
-    // Push root with horizontal distance 0
     q.push({root, 0});
 
     while (!q.empty()) {
@@ -33,31 +59,25 @@ vector<int> topView(Node* root) {
         int hd = q.front().second;
         q.pop();
 
-        // If this horizontal distance is not visited before
-        if (mp.count(hd) == 0) {
+        if (mp.count(hd) == 0)
             mp[hd] = node->data;
-        }
 
-        if (node->left) {
+        if (node->left)
             q.push({node->left, hd - 1});
-        }
 
-        if (node->right) {
+        if (node->right)
             q.push({node->right, hd + 1});
-        }
     }
 
-    // Store result in sorted order of horizontal distance
-    for (auto it : mp) {
+    for (auto it : mp)
         ans.push_back(it.second);
-    }
 
     return ans;
 }
 
 int main() {
 
-    // Building your tree manually
+    // Building your tree
 
     Node* root = new Node(1);
 
@@ -72,12 +92,15 @@ int main() {
     root->left->right->left = new Node(7);
     root->left->right->right = new Node(8);
 
+    // Print Level Order
+    printLevelOrder(root);
+
+    // Print Top View
     vector<int> result = topView(root);
 
     cout << "Top View: ";
-    for (int x : result) {
+    for (int x : result)
         cout << x << " ";
-    }
 
     return 0;
 }
