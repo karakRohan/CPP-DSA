@@ -29,6 +29,7 @@ double fractionalknapsack(vector<int> &profit, vector<int> &weights, int n, int 
             w = 0;
             break;
         }
+        
     }
     return result;
 }
