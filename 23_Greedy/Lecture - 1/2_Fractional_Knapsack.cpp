@@ -33,7 +33,6 @@ double fractionalknapsack(vector<int> &profit, vector<int> &weights, int n, int 
     return result;
 }
 
-
 int main(){
     vector<int> profit = {60, 100, 120};     
     vector<int> weights = {10, 20, 30};
