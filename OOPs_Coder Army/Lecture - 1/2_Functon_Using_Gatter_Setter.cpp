@@ -41,6 +41,9 @@ class Student{
     void getCompanyName(){
         cout<<company_name<<endl;
     }
+    int getroll_no(){
+        return roll_no;
+    }
 };
 
 int main(){
@@ -56,5 +59,8 @@ int main(){
     s1.getRollNo();
     s1.getGrade();
     s1.getCompanyName();
+
+    cout<<endl;
+    cout<<"Roll No: "<<s1.getroll_no()<<endl;
 
 }
