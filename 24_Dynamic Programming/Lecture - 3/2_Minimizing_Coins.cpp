@@ -20,6 +20,7 @@ int f(int x){ // f = function, x = amount
 }
 
 
+
 int main(){
     int n , x;
     cin >> n >> x;
