@@ -38,7 +38,7 @@
 
 
 
-
+// Question :- https://www.spoj.com/problems/MCOINS/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -48,7 +48,7 @@ int main(){
 
     vector<bool> dp(1000001, 0); // FIX: size increased
 
-    
+
     dp[1] = 1;
     if(k <= 1000000) dp[k] = 1;
     if(l <= 1000000) dp[l] = 1;
