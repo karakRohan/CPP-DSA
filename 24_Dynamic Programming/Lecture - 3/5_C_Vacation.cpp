@@ -26,6 +26,7 @@ int main(){
         // ith day - c
         dp[i][2] = c + max(dp[i-1][0], dp[i-1][1]);
     }
+    
 
     cout << max({dp[n-1][0], dp[n-1][1], dp[n-1][2]}) << endl;
 
