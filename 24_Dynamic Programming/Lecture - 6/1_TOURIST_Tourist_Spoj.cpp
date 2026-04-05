@@ -11,7 +11,7 @@ ll dp[105][105][105];
 ll f(ll i, ll j, ll x, ll y){
 
     if(i > n or j > m or x > n or y > m or mat[i][j] == '#' or mat[x][y] == '#') return 0;
-    if(i == n and j == m){
+    if(i == n and j == m){ // is the tourist 1 already at n , m (i+j) == (n+m)
         return mat[i][j] == '*';
     }
     if(dp[i][j][x] != -1) return dp[i][j][x]; 
