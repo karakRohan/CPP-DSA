@@ -5,7 +5,7 @@ using namespace std;
 #define ll long long int
 
 ll n, m; //  dimensions of the input matrix
-char mat[105][105]; //  input matrix
+char mat[105][105]; //  input matrix // mat = Matrix
 ll dp[105][105][105];
 
 ll f(ll i, ll j, ll x, ll y){
