@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class CustomClass
+class Customer
 {
     string name;
     int account_number;
@@ -9,30 +9,45 @@ class CustomClass
 
 public:
     // Default constructor
-    CustomClass()
+    Customer()
     {
         name = "Rohan";
         account_number = 5;
         balance = 100000;
     }
+
     // Parameterized constructor
-    CustomClass(string n, int b, int c)
+    Customer(string a, int b, int c)
     {
-        name = n;
+        name = a;
         account_number = b;
         balance = c;
     }
+
+    // Constructor with 2 parameters
+    Customer(string a, int b)
+    {
+        name = a;
+        account_number = b;
+        balance = 0;
+    }
+
     void display()
     {
         cout << "Name: " << name << endl;
         cout << "Account Number: " << account_number << endl;
         cout << "Balance: " << balance << endl;
+        cout << "----------------------" << endl;
     }
 };
 
-int main(){ 
-    CustomClass a1; // Default constructor is called
-    CustomClass a2("Rohit", 10, 50000); // Parameterized constructor is called
-    a1.display();
-    a2.display();
+int main()
+{
+    Customer A1;                      // Default constructor
+    Customer A2("Rohit", 10, 50000); // Parameterized
+    Customer A3("Raj", 15, 75000);   // Parameterized
+
+    A1.display();
+    A2.display();
+    A3.display();
 }
