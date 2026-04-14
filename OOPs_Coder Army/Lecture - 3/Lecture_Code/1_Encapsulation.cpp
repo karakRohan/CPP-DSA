@@ -1,3 +1,4 @@
+// They are attributes of classes or class member
 #include <iostream>
 using namespace std;
 
