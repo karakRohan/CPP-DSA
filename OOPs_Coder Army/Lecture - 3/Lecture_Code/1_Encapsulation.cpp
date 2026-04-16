@@ -8,7 +8,7 @@ class Customer
     int account_number, balance, age;
     static int total_customer;
     static int total_balance;
-    
+
 
 public:
     Customer(string name, int account_number, int balance, int age)
@@ -67,7 +67,6 @@ public:
 
 int Customer::total_customer = 0;
 int Customer::total_balance = 0;
-
 
 int main()
 {
