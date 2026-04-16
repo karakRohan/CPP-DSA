@@ -67,6 +67,7 @@ public:
 int Customer::total_customer = 0;
 int Customer::total_balance = 0;
 
+
 int main()
 {
     Customer A1("Rohit", 1, 1000, 3);
