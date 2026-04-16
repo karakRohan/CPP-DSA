@@ -8,6 +8,7 @@ class Customer
     int account_number, balance, age;
     static int total_customer;
     static int total_balance;
+    
 
 public:
     Customer(string name, int account_number, int balance, int age)
