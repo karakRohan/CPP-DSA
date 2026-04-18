@@ -11,7 +11,6 @@ void add_edge(int a, int b, bool bidir = true) {
 
 }
 
-
 void topoBFS() {
     // Kahn algo
     vector<int> indegree(v, 0);
