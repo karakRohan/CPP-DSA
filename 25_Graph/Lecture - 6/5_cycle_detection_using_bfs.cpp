@@ -70,3 +70,16 @@ int main() {
 
     return 0;
 }
+
+/*Input:
+5   
+5
+1 2
+2 3
+3 4
+4 5
+5 1
+Output:
+1
+
+*/
