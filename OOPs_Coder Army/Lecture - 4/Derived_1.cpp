@@ -29,7 +29,7 @@ public:
 int main()
 {
     Student A;
-    A.fun("Arhan", 10, 43);
+    A.fun("Rohan", 10, 43);
     A.display();
 
     return 0;
