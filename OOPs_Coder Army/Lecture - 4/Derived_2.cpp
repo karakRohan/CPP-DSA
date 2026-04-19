@@ -42,10 +42,10 @@ class Teacher : public Human
 };
 int main()
 {
-    Student A("Arhan", 19, 54, 213, 60000);
+    Student A("Rohan", 19, 54, 213, 60000);
     A.display();
     Teacher B;
-    B.name = "Arhan";
+    B.name = "Rohan";
 
     return 0;
 }
