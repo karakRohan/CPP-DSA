@@ -48,7 +48,7 @@ public:
 
 int main()
 {
-    Student A1("Arhan", 19, 213, 99);
+    Student A1("Rohan", 19, 213, 99);
     A1.display();
     return 0;
 }
