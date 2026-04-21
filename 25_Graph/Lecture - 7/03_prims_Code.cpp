@@ -13,7 +13,6 @@ void add_edge(int u, int v, int wt, bool bidir=true) {
     }
 }
 
-
 ll prims(int src, int n) {
     // fibbonaci heap can be used to optimize the time complexity to O(E + VlogV) from O(ElogV) of binary heap
     priority_queue<pp, vector<pp> , greater<pp> > pq; // {wt, node} , pp is pair<int, int> 
