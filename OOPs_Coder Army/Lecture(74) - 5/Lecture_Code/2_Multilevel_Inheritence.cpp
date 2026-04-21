@@ -45,7 +45,7 @@ public:
 
 int main()
 {
-    Manager A1("Rohan", 200, "Finance");
+    Manager A1("Rohan", 350000, "SDE III ");
     A1.introduce();
     A1.monthly_salary();
     A1.work();
