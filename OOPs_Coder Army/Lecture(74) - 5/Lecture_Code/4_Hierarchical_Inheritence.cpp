@@ -67,9 +67,10 @@ public:
 
 int main()
 {
-    Student A1("Arhan", 19, 213, 99);
+    Student A1("Rohan", 19, 213, 99);
     A1.display();
 
-    Teacher A2("Arfan", 12, 900);
+    Teacher A2("Rohit", 12, 900);
+    A2.display();
     return 0;
-}
+} 
