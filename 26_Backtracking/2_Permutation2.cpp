@@ -9,6 +9,8 @@ void permutation(string &str, int i){
     unordered_set<char> s; // to avoid duplicate characters at the same position
     for(int idx=i; idx<str.size(); idx++){
         if(s.count(str[idx])) continue;
+
+        s.insert(str[idx]);
         swap(str[idx], str[i]);
         permutation(str, i+1);
         swap(str[i], str[i]); // backtracking step, to restore the original string for the next iteration
