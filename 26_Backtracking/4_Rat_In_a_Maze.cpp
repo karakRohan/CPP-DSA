@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int ans;
+int ans; // global variable to store the count of paths from (0,0) to (n-1,n-1)
 bool canWeGo(int n, int i, int j, vector<vector<int> > &grid){
     return i>=0 && j>=0 && i<n && j<n && grid[i][j] == 0;
 }
