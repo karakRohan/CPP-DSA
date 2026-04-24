@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 int ans;
 
 bool canWeGo(int n, int i, int j, vector<vector<int> > &grid){
