@@ -44,7 +44,6 @@ int ratInMaze(vector<vector<int> > &grid, int n){
 }
 
 
-
 int main(){
     vector<vector<int>> grid = {
         {0,0,1,0,0,1,0},
