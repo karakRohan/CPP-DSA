@@ -51,3 +51,4 @@ int main() {
     knightsTour(n, 0, 0);
     return 0;
 }
+
