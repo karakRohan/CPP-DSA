@@ -34,13 +34,13 @@ public:
             char ch = word[i];
 
             if (curr->children.count(ch)) {
-                curr->countWordsStarting++;
                 curr = curr->children[ch];
+                curr->countWordsStarting++;
             } else {
                 Node* child = new Node(ch);
                 curr->children[ch] = child;
-                curr->countWordsStarting++;
                 curr = curr->children[ch];
+                curr->countWordsStarting++;
             }
         }
 
