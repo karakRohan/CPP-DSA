@@ -29,4 +29,3 @@ int main(int argc, char const *argv[]) {
     cout<<tsp(1, 0, 4)<<"\n";
     return 0;
 }
-
