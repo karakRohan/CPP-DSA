@@ -1,0 +1,16 @@
+An exception is an unexpected problem that arises during the execution
+of a program. Our program terminates suddenly with some errors/issues.
+Exception occurs during the running of the program.
+
+The try keyword represents a block of code that may throw an exception,
+placed inside the try block. It's followed by one or more catch blocks.
+If an exception occurs, the try block throws that exception.
+
+The catch statement represents a block of code that is executed
+when a particular exception is thrown from the try block.
+The code to handle the exception is written inside the catch block.
+
+An exception in C++ can be thrown using the throw keyword.
+When a program encounters a throw statement, then it immediately
+terminates the current function and starts finding a matching
+catch block to handle the thrown exception.
