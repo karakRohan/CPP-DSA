@@ -13,6 +13,7 @@ ll tsp(int mask, int curr, int n) {// n^2 * 2^n
 	if(mask == ((1 << n)-1)) {
 		return grid[curr][0];
 	}
+    
 	if(dp[curr][mask] != -1) return dp[curr][mask];
 	ll ans = INT_MAX;
 	for(int city = 0; city < n; city++) {
