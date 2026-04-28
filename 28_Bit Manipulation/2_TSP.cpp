@@ -24,7 +24,6 @@ ll tsp(int mask, int curr, int n) {//n^2*2^n
 }
 
 int main(int argc, char const *argv[]) {
-    // Write your code here....
     memset(dp, -1, sizeof(dp));
     cout<<tsp(1, 0, 4)<<"\n";
     return 0;
