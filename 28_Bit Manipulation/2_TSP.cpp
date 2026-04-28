@@ -8,7 +8,7 @@ int grid[4][4] = {
 	{42, 30, 0, 10},
 	{25, 34, 10, 0}
 };
-ll tsp(int mask, int curr, int n) {//n^2*2^n
+ll tsp(int mask, int curr, int n) {// n^2 * 2^n
 	if(mask == ((1 << n)-1)) {
 		return grid[curr][0];
 	}
