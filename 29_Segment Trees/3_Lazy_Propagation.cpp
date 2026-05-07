@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 vector<int> seg;
 vector<int> lazy;
 void build_segment_Tree(vector<int> &nums, int i, int lo, int hi)
