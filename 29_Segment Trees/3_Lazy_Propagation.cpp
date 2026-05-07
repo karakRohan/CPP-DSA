@@ -84,7 +84,7 @@ int main()
     build_segment_Tree(arr, 0, 0, n - 1);
 
     int q, l, r;
-    cout << "\nEnter the range : ";
+    cout << "Enter The Range : " << endl;
     cin >> l >> r;
     cout << endl
          << getsum(0, 0, n - 1, l, r);
