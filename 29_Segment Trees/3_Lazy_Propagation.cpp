@@ -4,6 +4,7 @@ using namespace std;
 
 vector<int> seg;
 vector<int> lazy;
+
 void build_segment_Tree(vector<int> &nums, int i, int lo, int hi)
 {
     if (lo == hi)
@@ -16,6 +17,7 @@ void build_segment_Tree(vector<int> &nums, int i, int lo, int hi)
     build_segment_Tree(nums, 2 * i + 2, mid + 1, hi);
     seg[i] = seg[2 * i + 1] + seg[2 * i + 2];
 }
+
 int getsum(int i, int lo, int hi, int &l, int &r)
 {
     if (lazy[i] != 0)
