@@ -18,7 +18,8 @@ void build_segment_Tree(vector<int> &nums, int i, int lo, int hi)
     seg[i] = seg[2 * i + 1] + seg[2 * i + 2];
 }
 
-int getsum(int i, int lo, int hi, int &l, int &r)
+int getsum(int i, int lo, int hi, int& l, int& r)
+    //Check for pending lazy updates and update the current node if needed
 {
     if (lazy[i] != 0)
     {
