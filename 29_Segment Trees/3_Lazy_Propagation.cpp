@@ -25,7 +25,7 @@ int getsum(int i, int lo, int hi, int& l, int& r)
     {
         int rangesize = hi - lo + 1;
         seg[i] += (rangesize * lazy[i]);
-        if (lo != hi)
+        if (lo != hi) // send lazy to left and right child
         {
             lazy[2 * i + 1] += lazy[i];
             lazy[2 * i + 2] += lazy[i];
@@ -91,3 +91,9 @@ int main()
     cout << endl
          << getsum(0, 0, n - 1, l, r);
 }
+
+
+/*
+Input: 2 5
+Output: 20 60
+*/
