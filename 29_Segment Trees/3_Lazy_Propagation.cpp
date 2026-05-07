@@ -43,21 +43,22 @@ int getsum(int i, int lo, int hi, int& l, int& r)
 }
 
 void updateRange(int i, int lo, int hi, int l, int r, int value)
+    //check for pending lazy updates and update the current node if needed
 {
     if (lazy[i] != 0)
     {
         int rangesize = hi - lo + 1;
         seg[i] += (rangesize * lazy[i]);
-        if (lo != hi)
+        if (lo != hi) // send lazy to left and right child
         {
             lazy[2 * i + 1] += lazy[i];
             lazy[2 * i + 2] += lazy[i];
         }
         lazy[i] = 0;
     }
-    if (l > hi || r < lo)
+    if (l > hi || r < lo) 
         return;
-    if (lo >= l && hi <= r)
+    if (lo >= l && hi <= r) // Update Entire [lo,hi] range
     {
         int rangesize = hi - lo + 1;
         seg[i] += (rangesize * value);
