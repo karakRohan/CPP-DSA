@@ -34,7 +34,7 @@ int getsum(int i, int lo, int hi, int& l, int& r)
     }
     if (l > hi || r < lo)
         return 0;
-    if (lo >= l && hi <= r)
+    if (lo >= l && hi <= r) // Update Entire [lo,hi] range
         return seg[i];
     int mid = lo + (hi - lo) / 2;
     int leftsum = getsum(2 * i + 1, lo, mid, l, r);
