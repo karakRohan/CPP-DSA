@@ -19,6 +19,7 @@ void build_segment_Tree(vector<int> &nums, int i, int lo, int hi)
 }
 
 
+
 int getsum(int i, int lo, int hi, int& l, int& r)
     //Check for pending lazy updates and update the current node if needed
 {
