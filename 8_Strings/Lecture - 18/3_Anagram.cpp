@@ -14,7 +14,7 @@ int main()
 
 // leet Code 242
 
-class solution {
+/*class solution {
     public:
     
     bool isAnagram(string s, string t) {
@@ -23,4 +23,4 @@ class solution {
         if(s==t) return true;
         else return false;
     }
-};
+};*/
