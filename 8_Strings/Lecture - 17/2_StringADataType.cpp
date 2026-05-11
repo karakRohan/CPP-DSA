@@ -3,10 +3,10 @@ using namespace std;
 int main()
 {
     string str = "Rohan Karak is a Student";
-    //cout<<str;
+    cout<<str<<endl;
     string name;
-    // cin>>s; //Only if the string has no spacess
+    cin>>name; //Only if the string has no spaces
 
     getline(cin,name); //VVI 
-    cout<<name;
+    cout<<name<<endl;
 }
