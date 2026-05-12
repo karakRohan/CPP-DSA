@@ -5,7 +5,6 @@ int main()
 {
     string s;
     getline(cin, s);
-
     // Remove { } and ,
     for(int i = 0; i < s.size(); i++)
     {
