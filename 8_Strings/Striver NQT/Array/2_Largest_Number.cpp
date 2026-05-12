@@ -14,18 +14,27 @@ int main()
             s[i] = ' ';
         }
     }
+
     vector<int> arr;
     stringstream ss(s);
+
     int x;
+
     while(ss >> x)
     {
         arr.push_back(x);
     }
-    int smallest = INT_MAX;
-    for(int i = 0; i < arr.size(); i++)
+
+
+
+    int largest = INT_MIN;
+
+    for(int i = 1; i < arr.size(); i++)
     {
-        smallest = min(smallest, arr[i]);
+        largest = max(largest,arr[i]);
     }
-    cout << smallest;
+
+    cout << largest;
+
     return 0;
 }
