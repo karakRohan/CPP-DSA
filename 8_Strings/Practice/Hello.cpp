@@ -1,12 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string line;
-    getline(cin,line); // Read entire line
-    stringstream ss(line);
-    vector<int> arr;
-    int num;
-    while(ss>>num) arr.push_back(num);
-    for(int x : arr) cout<<x<<" ";
+    string s;
+    getline(cin,s);
+    if(s.front()=='[' && s.back() == ']'){
+        s=s.substr(1,s.length()-2);
+    }
+    stringstream ss(s);
+    string temp;
+    vector<string> arr;
+    while(getline(ss,temp,',')){
+        int num = stoi(temp);
+        arr.push_back(temp);
+    }
+    // Function Call
     return 0;
 }
