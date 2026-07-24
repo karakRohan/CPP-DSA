@@ -19,7 +19,6 @@ void equilibriumIndex(vector<int>& arr)
     cout << -1;
 }
 
-
 int main(){
 
     string s;
