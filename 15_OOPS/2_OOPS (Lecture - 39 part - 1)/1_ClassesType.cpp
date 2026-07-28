@@ -67,5 +67,6 @@ int main() {
     cout << "Ayan Score: " << Ayan.score << endl;
     cout << "Ayan Health: " << Ayan.health << endl;
 
+    
     return 0;
 }
