@@ -15,7 +15,6 @@ void equilibriumIndex(vector<int>& arr)
             return;
         }
     }
-
     cout << -1;
 }
 
