@@ -19,7 +19,6 @@ void equilibriumIndex(vector<int>& arr)
 }
 
 int main(){
-
     string s;
     getline(cin,s);
 
