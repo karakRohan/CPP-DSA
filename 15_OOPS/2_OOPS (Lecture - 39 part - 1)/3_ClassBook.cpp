@@ -80,8 +80,7 @@ public:
     int countBooks(int p) {
         if (price < p)
             return 1;
-        else
-            return 0;
+        else return 0;
     }
 
     bool isBookPresent(string book) {
