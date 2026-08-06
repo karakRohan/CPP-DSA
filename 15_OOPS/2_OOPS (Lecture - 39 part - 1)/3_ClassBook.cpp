@@ -87,7 +87,6 @@ public:
         // check if 'book' exists as substring in name
         return name.find(book) != string::npos;
     }
-    
 };
 
 int main() {
