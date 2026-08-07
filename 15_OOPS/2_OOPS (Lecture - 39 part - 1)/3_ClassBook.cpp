@@ -89,7 +89,6 @@ public:
     }
 };
 
-
 int main() {
     Book harryPotter;
     harryPotter.name = "Harry Potter";
