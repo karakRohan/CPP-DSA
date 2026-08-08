@@ -27,6 +27,7 @@ int main(){
 
     //delete
     m.erase("Raghav"); // This will remove the key "Raghav" from the map
+    
     m.erase("Sanket"); // This will remove the key "Sanket" from the map
     for(auto p : m){
         cout<<p.first<<" "<<p.second<<endl;
