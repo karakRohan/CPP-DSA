@@ -46,8 +46,6 @@ int main() {
     calci.b = 7;
     calci.add();
     calci.subtract();
-
-
-
+    
     return 0;
 }
