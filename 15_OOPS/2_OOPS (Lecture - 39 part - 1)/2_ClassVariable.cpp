@@ -37,7 +37,6 @@ int main() {
     amit.health = 100;
     strcpy(amit.name, "Amit");   // safely copy string
 
-
     amit.showHealth();
     amit.showScore();
 
@@ -46,6 +45,6 @@ int main() {
     calci.b = 7;
     calci.add();
     calci.subtract();
-    
+
     return 0;
 }
