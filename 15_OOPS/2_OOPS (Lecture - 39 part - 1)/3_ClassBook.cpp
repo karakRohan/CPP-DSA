@@ -1,4 +1,4 @@
-// #include<bits/stdc++.h> 
+// #include<bits/stdc++.h>
 // using namespace std;
 
 // class Book{
@@ -31,8 +31,6 @@
 //     cout<<harryPotter.(100);
 // }
 
-
-
 // #include <bits/stdc++.h>
 // using namespace std;
 
@@ -63,40 +61,44 @@
 //     harryPotter.price = 1000;
 //     harryPotter.noOfPages = 500;
 
-//     cout << harryPotter.countBooks(500); 
-//     cout << harryPotter.isBookPresent('H'); 
+//     cout << harryPotter.countBooks(500);
+//     cout << harryPotter.isBookPresent('H');
 // }
-
 
 #include <bits/stdc++.h>
 using namespace std;
 
-class Book {
+class Book
+{
 public:
     string name;
     int price;
     int noOfPages;
 
-    int countBooks(int p) {
+    int countBooks(int p)
+    {
         if (price < p)
             return 1;
-        else return 0;
+        else
+            return 0;
     }
 
-    bool isBookPresent(string book) {
+    bool isBookPresent(string book)
+    {
         // check if 'book' exists as substring in name
         return name.find(book) != string::npos;
     }
 };
 
-int main() {
+int main()
+{
     Book harryPotter;
     harryPotter.name = "Harry Potter";
     harryPotter.price = 1000;
     harryPotter.noOfPages = 500;
 
-    cout << harryPotter.isBookPresent("H");           // ✅ prints 1
-    cout << harryPotter.isBookPresent("Harry");       // ✅ prints 1
-    cout << harryPotter.isBookPresent("Potter");      // ✅ prints 1
-    cout << harryPotter.isBookPresent("Lord");        // ❌ prints 0
+    cout << harryPotter.isBookPresent("H");      // ✅ prints 1
+    cout << harryPotter.isBookPresent("Harry");  // ✅ prints 1
+    cout << harryPotter.isBookPresent("Potter"); // ✅ prints 1
+    cout << harryPotter.isBookPresent("Lord");   // ❌ prints 0
 }
