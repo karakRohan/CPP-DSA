@@ -11,8 +11,7 @@ int main(){
     pair<string,int> p1;
     p1.first = "Raghav";
     p1.second = 76;
-    m.insert(p1);
-    
+    m.insert(p1);   
 
     m["Harsh"] = 85;
     m["Sanket"] = 80;
