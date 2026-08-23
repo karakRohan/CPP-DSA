@@ -17,7 +17,8 @@ int main(){
     m["Sanket"] = 80;
     // for(pair <string,int> p : m){
     //     cout<<p.first<<" "<<p.second<<endl;
-    // }       
+    // }
+           
 
     for(auto p : m){
         cout<<p.first<<" "<<p.second<<endl;
