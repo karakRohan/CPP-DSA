@@ -23,6 +23,7 @@ int main(){
         cout<<p.first<<" "<<p.second<<endl;
     }
 
+
     cout<<m.size()<<endl; // This will print the size of the map, which is 3
 
     //delete
