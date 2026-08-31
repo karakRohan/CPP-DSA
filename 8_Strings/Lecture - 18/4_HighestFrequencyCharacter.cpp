@@ -34,9 +34,7 @@ int main()
     //         cout<<ch<<" = "<<max<<endl;
     //     }
     // }
-
-
-    
+   
 
     // 2nd Method //
     string s = "leetcode";
