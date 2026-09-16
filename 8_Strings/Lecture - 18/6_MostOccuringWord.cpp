@@ -6,6 +6,7 @@ int main()
     stringstream ss(str);
     string temp;
     vector<string> v;
+    
     while(ss>>temp)
     {
         v.push_back(temp);
