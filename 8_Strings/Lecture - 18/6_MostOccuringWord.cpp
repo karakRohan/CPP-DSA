@@ -6,11 +6,12 @@ int main()
     stringstream ss(str);
     string temp;
     vector<string> v;
-    
+
     while(ss>>temp)
     {
         v.push_back(temp);
-    }    
+    }  
+      
     
     sort(v.begin(),v.end());
     int MaxCount = 1;
