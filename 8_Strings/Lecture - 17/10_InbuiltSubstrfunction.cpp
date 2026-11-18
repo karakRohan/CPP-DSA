@@ -12,5 +12,6 @@ int main()
     cout<<str.substr(n/2);
 }
 
+
 // input : abcdefgh
 // output : efgh
